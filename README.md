@@ -2,8 +2,10 @@
 
 
 
-Freecodecamp :   https://www.youtube.com/watch?v=HXV3zeQKqGY&t=18s
+Freecodecamp :  https://www.youtube.com/watch?v=HXV3zeQKqGY&t=18s
 
+
+Practise : https://platform.stratascratch.com/coding?code_type=1
 
 Repo :
 
