@@ -35,3 +35,19 @@ I hope these resources help you learn and master SQL in a fun and engaging way. 
 
 🌟 Enjoying my content? Stay in the loop! 🌟
 ---------
+
+**************
+Basic SQL can be learned in 1-2 Weeks and is enough to get you practicing on the job.
+
+Here are 5 resources to learn the basics for free:
+
+- sqlbolt.com
+- mode.com/sql-tutorial
+- sqlteaching.com
+- w3schools.com/sql
+- selectstarsql.com
+
+All of them get recommended highly.
+
+
+
