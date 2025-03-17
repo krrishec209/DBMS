@@ -49,5 +49,36 @@ Here are 5 resources to learn the basics for free:
 
 All of them get recommended highly.
 
+***********
+
+SQL a day can keep interview rejection away.
+
+Practicing at least one question a day can help you crack any Data Engineering SQL interview.
+
+𝗕𝗲𝘀𝘁 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺𝘀 𝘁𝗼 𝗽𝗿𝗮𝗰𝘁𝗶𝗰𝗲 𝗦𝗤𝗟 𝗽𝗿𝗼𝗯𝗹𝗲𝗺𝘀 𝗱𝗮𝗶𝗹𝘆
+ 
+- LeetCode - https://lnkd.in/gkCpv7NA
+- HackerRank - https://lnkd.in/gnFS4frz
+- SQLZoo - https://sqlzoo.net/
+- Mode Analytics - https://lnkd.in/gRPrQrf5
+- SQL Bolt - https://sqlbolt.com/
+- GeeksforGeeks - https://lnkd.in/ggYbizNB
+- LearnSQL - https://www.learnsql.com/
+- LearnMode - https://lnkd.in/gQYCkwS2
+- Strata Scratch - https://lnkd.in/gYtZQY53
+- DataLemur - https://datalemur.com/
+- SQL Fiddle - http://sqlfiddle.com/
+- DB-Fiddle - https://www.db-fiddle.com/
+- SQL Exercises - https://lnkd.in/d89TewuQ
+- SQL Practice Set - https://lnkd.in/ddn7hfeu
+- Mode SQL Tutorial - https://lnkd.in/d53iPD-U
+- SQL Murder Mystery - https://lnkd.in/dtVqDV-g
+
+𝗦𝗤𝗟 𝗲𝘅𝗽𝗲𝗿𝘁𝘀 𝘆𝗼𝘂 𝗰𝗮𝗻 𝗳𝗼𝗹𝗹𝗼𝘄 -
+
+Ankit Bansal 
+Sumit Mittal 
+
+https://www.linkedin.com/posts/surbhi-walecha_sql-data-activity-7303257273139650561-Lug0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
 
 
