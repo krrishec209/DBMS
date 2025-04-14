@@ -1,0 +1,91 @@
+
+Data engineering and Analytics isn't just about writing queries.
+𝘐𝘵'𝘴 𝘢𝘣𝘰𝘶𝘵 𝘸𝘳𝘪𝘵𝘪𝘯𝘨 𝘚𝘔𝘈𝘙𝘛 𝘲𝘶𝘦𝘳𝘪𝘦𝘴. 🚀
+
+
+Let me break down a pro-level SQL technique
+
+SELECT
+
+ department,
+
+ employee_name,
+
+ salary,
+
+
+
+ FIRST_VALUE(salary) OVER (
+ PARTITION BY department
+ ORDER BY salary
+ ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
+ ) AS department_lowest_salary,
+
+
+ LAST_VALUE(salary) OVER (
+ PARTITION BY department
+ ORDER BY salary
+ ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
+ ) AS department_highest_salary
+
+
+
+FROM employee_salaries;
+
+
+
+By default, window functions like LAST_VALUE() have a tricky default frame that only looks backwards.
+
+
+𝘓𝘦𝘵'𝘴 𝘣𝘳𝘦𝘢𝘬 𝘥𝘰𝘸𝘯 𝘸𝘩𝘢𝘵'𝘴 𝘩𝘢𝘱𝘱𝘦𝘯𝘪𝘯𝘨:
+
+𝐔𝐍𝐁𝐎𝐔𝐍𝐃𝐄𝐃 𝐏𝐑𝐄𝐂𝐄𝐃𝐈𝐍𝐆: Starts at the first row of the partition
+𝐔𝐍𝐁𝐎𝐔𝐍𝐃𝐄𝐃 𝐅𝐎𝐋𝐋𝐎𝐖𝐈𝐍𝐆: Goes all the way to the last row of the partition
+
+This combination tells SQL: "𝘓𝘰𝘰𝘬 𝘢𝘵 𝘌𝘝𝘌𝘙𝘠 𝘳𝘰𝘸 𝘪𝘯 𝘵𝘩𝘪𝘴 𝘥𝘦𝘱𝘢𝘳𝘵𝘮𝘦𝘯𝘵, 𝘪𝘨𝘯𝘰𝘳𝘦 𝘵𝘩𝘦 𝘥𝘦𝘧𝘢𝘶𝘭𝘵 𝘸𝘪𝘯𝘥𝘰𝘸𝘪𝘯𝘨"
+
+𝐓𝐲𝐩𝐢𝐜𝐚𝐥 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐁𝐞𝐡𝐚𝐯𝐢𝐨𝐫 (🚫 𝐖𝐢𝐭𝐡𝐨𝐮𝐭 𝐎𝐮𝐫 𝐓𝐫𝐢𝐜𝐤):
+
+-- This would only look backwards, missing true max
+LAST_VALUE(salary) OVER (
+ PARTITION BY department
+ ORDER BY salary
+) AS incorrect_max_salary
+
+
+𝐎𝐮𝐫 𝐓𝐫𝐢𝐜𝐤's (✅ 𝐖𝐢𝐭𝐡 𝐅𝐫𝐚𝐦𝐞 𝐂𝐥𝐚𝐮𝐬𝐞):
+
+LAST_VALUE(salary) OVER (
+ PARTITION BY department
+ ORDER BY salary
+ ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
+) AS true_department_max_salary
+
+𝐑𝐞𝐚𝐥-𝐖𝐨𝐫𝐥𝐝 𝐈𝐦𝐩𝐚𝐜𝐭:
+
+1) Compute true department-wide min/max in ONE query
+2) Avoid multiple passes through the data
+3) Create fast, readable analytics
+
+This works in Snowflake, BigQuery, and modern data warehouses. 
+
+This gives you the ACTUAL department-wide min and max, not a limited window that can give misleading results.
+
+
+
+𝐃𝐚𝐭𝐚 𝐞𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 𝐢𝐬𝐧'𝐭 𝐣𝐮𝐬𝐭 𝐚𝐛𝐨𝐮𝐭 𝐰𝐫𝐢𝐭𝐢𝐧𝐠 𝐪𝐮𝐞𝐫𝐢𝐞𝐬. 𝐈𝐭'𝐬 𝐚𝐛𝐨𝐮𝐭 𝐰𝐫𝐢𝐭𝐢𝐧𝐠 𝐒𝐌𝐀𝐑𝐓 𝐪𝐮𝐞𝐫𝐢𝐞𝐬. 🚀
+
+
+If you've read so far, do LIKE the post 👍
+ 
+𝐏.𝐒:
+Learn no-nonsense AWS Data Engineering with 372+ others:
+https://aws.sachin.cloud
+&
+𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 group for notification : https://w.sachin.cloud
+(phone privacy ensured, you won't see others )
+
+https://www.linkedin.com/posts/sachincw_126-complex-sql-queriespdf-activity-7315674866848837632-P-YU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
+
+https://sachinchandrashekhar.com/page/AWS-Data-Engineering-MasterClass
