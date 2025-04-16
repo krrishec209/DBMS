@@ -29,3 +29,89 @@ Here are 25 SQL interview questions specifically asked in Data Engineer intervie
 25/ Write a query to standardize data by scaling numeric columns between 0 and 1.
 
 https://www.linkedin.com/posts/surbhi-walecha_i-promise-you-will-get-10x-better-at-sql-activity-7306521250267389952-QKCn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
+
+***********************
+
+SQL performance tuning interview questions asked in multiple MNC’s like Sapient Tata Consultancy Services Accenture Deloitte and More!
+
+Basic Questions
+
+
+1.⁠ ⁠What is SQL performance tuning, and why is it important?
+2.⁠ ⁠How do you identify performance bottlenecks in SQL queries?
+3.⁠ ⁠What are the most common causes of poor SQL performance?
+4.⁠ ⁠How do you optimize SQL queries for better performance?
+5.⁠ ⁠What is the difference between query optimization and indexing?
+
+
+Indexing Questions
+
+
+1.⁠ ⁠What is indexing, and how does it improve query performance?
+2.⁠ ⁠What types of indexes are available in SQL (e.g., clustered, non-clustered)?
+3.⁠ ⁠How do you determine which columns to index?
+4.⁠ ⁠What is the difference between index scanning and index seeking?
+5.⁠ ⁠How do you maintain indexes for optimal performance?
+
+
+Query Optimization Questions
+
+
+1.⁠ ⁠How do you optimize SQL queries using EXPLAIN/EXECUTION PLAN?
+2.⁠ ⁠What is the difference between WHERE and HAVING clauses?
+3.⁠ ⁠How do you optimize JOIN operations?
+4.⁠ ⁠What is the impact of subqueries on performance?
+5.⁠ ⁠How do you optimize aggregate functions (e.g., SUM, AVG, MAX).
+
+
+Database Design Questions
+
+
+1.⁠ ⁠How does database design impact query performance?
+2.⁠ ⁠What is normalization, and how does it affect performance?
+3.⁠ ⁠How do you design tables for optimal performance?
+4.⁠ ⁠What is the impact of data types on performance?
+5.⁠ ⁠How do you optimize database schema for query performance.
+
+
+Troubleshooting Questions
+
+
+1.⁠ ⁠How do you troubleshoot slow-running queries?
+2.⁠ ⁠What tools do you use for SQL performance troubleshooting?
+3.⁠ ⁠How do you identify locking and blocking issues?
+4.⁠ ⁠What is the impact of deadlocks on performance?
+5.⁠ ⁠How do you resolve query timeout issues.
+
+
+Advanced Questions
+
+
+1.⁠ ⁠How do you optimize SQL queries for parallel processing?
+2.⁠ ⁠What is the impact of data compression on performance?
+3.⁠ ⁠How do you optimize SQL queries for cloud databases?
+4.⁠ ⁠What is the difference between query store and plan cache?
+5.⁠ ⁠How do you optimize SQL queries for real-time analytics.
+
+
+Scenario-Based Questions
+
+
+1.⁠ ⁠You have a slow-running query that joins multiple tables. How would you optimize it?
+2.⁠ ⁠Your database is experiencing high CPU usage. What would you do to resolve it?
+3.⁠ ⁠You need to optimize a query that uses multiple subqueries. How would you approach it?
+4.⁠ ⁠Your database is running out of disk space. What would you do to resolve it?
+5.⁠ ⁠You need to optimize a query that uses aggregate functions. How would you approach it.
+
+
+Behavioral Questions
+
+
+1.⁠ ⁠Can you describe a time when you optimized a slow-running SQL query?
+2.⁠ ⁠How do you stay up-to-date with new SQL performance tuning techniques?
+3.⁠ ⁠Can you walk me through your process for troubleshooting SQL performance issues?
+4.⁠ ⁠How do you communicate performance tuning recommendations to stakeholders?
+5.⁠ ⁠Can you describe a challenging SQL performance tuning project you worked on?
+
+https://www.linkedin.com/posts/naveen-um-71069934a_sql-performance-tuning-interview-questions-activity-7316882983800459266-6V5K?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
